@@ -29,10 +29,26 @@ body {
     text-transform: capitalize;
 }
 
+#add_new_game_section>button:hover,
+.game_card>button:hover,
+.game_image_container img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#add_new_game_model,
+#view_game_model {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* Add New Game section */
 
 #add_new_game_section {
     padding: 16px 0;
+    position: relative;
 }
 
 #add_new_game_section>button {
@@ -40,8 +56,10 @@ body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    border-radius: 8px;
+    border-radius: 50%;
     font-size: 16px;
+    position: absolute;
+    top: -22px;
 }
 
 /* Filter section */
