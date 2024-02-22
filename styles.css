@@ -5,7 +5,130 @@
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
     background-color: pink;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* common styles */
+
+#add_new_game_section,
+#filter_section,
+#filter_section label,
+#filter_section>div,
+#game_list_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+/* Add New Game section */
+
+#add_new_game_section {
+    padding: 16px 0;
+}
+
+#add_new_game_section>button {
+    padding: 8px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Filter section */
+
+#filter_section {
+    flex-direction: column;
+}
+
+#filter_section label {
+    font-size: 12px;
+}
+
+#filter_section input,
+#filter_section select {
+    padding: 8px 4px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+#platform_container label {
+    font-size: 16px;
+}
+
+#platform_container select {
+    font-size: 18px;
+}
+
+/* Game list section */
+
+#game_list_section {
+    gap: 40px;
+    margin-top: 20px;
+    text-transform: none !important;
+    flex: 1;
+    overflow-y: scroll;
+    padding: 20px 0;
+}
+
+.game_card {
+    width: 300px;
+    border: 2px solid black;
+    padding: 8px;
+    position: relative;
+}
+
+.game_card>.game_image_container {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game_image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.game_card>.title,
+.game_card>.price,
+.game_card>button {
+    position: absolute;
+    background-color: pink;
+    padding: 0 4px;
+}
+
+.game_card>.title {
+    font-size: 18px;
+    font-weight: 700;
+    top: -16px;
+}
+
+.game_card>.price {
+    right: 4px;
+    top: -12px;
+}
+
+.game_card p {
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.game_card>button {
+    right: 4px;
+    text-transform: capitalize;
 }

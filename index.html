@@ -2,8 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta cha₹et="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cookie&family=Quicksand:wght@300..700&family=Sacramento&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <title>Ayush - 2023DS06 - 12 - 1</title>
 </head>
@@ -13,7 +18,7 @@
     <button type="button">Add Game</button>
   </div>
   <div id="filter_section">
-    <div>
+    <div id="platform_container">
       <label>Platform
         <select name="platform">
           <option value="PC">PC</option>
@@ -24,13 +29,65 @@
       </label>
     </div>
     <div>
-      <label>max (Rs.) : <input type="range" /></label>
+      <label>max (₹.) : <input type="range" /></label>
       <label>Genre
         <select name="platform">
           <option value="Action">Action</option>
           <option value="Adventure" selected>Adventure</option>
         </select>
       </label>
+    </div>
+  </div>
+  <div id="game_list_section">
+    <div class="game_card">
+      <div class="game_image_container">
+        <img src="https://toomkygames.com/wp-content/uploads/default/games/small/Cake-Shop-320x240.jpg" alt="lol" />
+      </div>
+      <span class="title">Title</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
+      <span class="price">299 ₹</span>
+      <button>view more</button>
+    </div>
+    <div class="game_card">
+      <div class="game_image_container">
+        <img src="https://c4.wallpaperflare.com/wallpaper/296/962/469/anna-nina-wallpaper-thumb.jpg" alt="lol" />
+      </div>
+      <span class="title">Title</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
+      <span class="price">299 ₹</span>
+      <button>view more</button>
+    </div>
+    <div class="game_card">
+      <div class="game_image_container">
+        <img
+          src="https://play-lh.googleusercontent.com/aKXKOVc6-ejZoXMcraRjPBxkreHKI_f95Y6j-JARGhj-j2qs6ma6l_g2WWKjsrCQDmc=w526-h296-rw"
+          alt="lol" />
+      </div>
+      <span class="title">Title</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
+      <span class="price">299 ₹</span>
+      <button>view more</button>
+    </div>
+    <div class="game_card">
+      <div class="game_image_container">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2020/8/XJ/AV/OJ/57036556/gta-4-pc-game-500x500.jpg"
+          alt="lol" />
+      </div>
+      <span class="title">Title</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
+      <span class="price">299 ₹</span>
+      <button>view more</button>
+    </div>
+    <div class="game_card">
+      <div class="game_image_container">
+        <img
+          src="https://play-lh.googleusercontent.com/t5oeiArOj1ud5N_FcP_rb4EDW1Jfb9hdduZymL3HPeqihlnEEChx0-vrBctx-NyS1Oo=w526-h296-rw"
+          alt="lol" />
+      </div>
+      <span class="title">Title</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
+      <span class="price">299 ₹</span>
+      <button>view more</button>
     </div>
   </div>
   <script src="main.js" />
