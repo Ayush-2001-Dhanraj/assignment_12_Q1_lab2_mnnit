@@ -39,71 +39,15 @@
       </label>
     </div>
   </div>
-  <div id="game_list_section">
-    <div class="game_card">
-      <div class="game_image_container">
-        <img src="https://toomkygames.com/wp-content/uploads/default/games/small/Cake-Shop-320x240.jpg" alt="lol" />
-        <span class="title">Title</span>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
-      <span class="price">299 ₹</span>
-      <button class="view_more_btn">view more</button>
-    </div>
-    <div class="game_card">
-      <div class="game_image_container">
-        <img src="https://c4.wallpaperflare.com/wallpaper/296/962/469/anna-nina-wallpaper-thumb.jpg" alt="lol" />
-        <span class="title">Title</span>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
-      <span class="price">299 ₹</span>
-      <button class="view_more_btn">view more</button>
-    </div>
-    <div class="game_card">
-      <div class="game_image_container">
-        <img
-          src="https://play-lh.googleusercontent.com/aKXKOVc6-ejZoXMcraRjPBxkreHKI_f95Y6j-JARGhj-j2qs6ma6l_g2WWKjsrCQDmc=w526-h296-rw"
-          alt="lol" />
-        <span class="title">Title</span>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
-      <span class="price">299 ₹</span>
-      <button class="view_more_btn">view more</button>
-    </div>
-    <div class="game_card">
-      <div class="game_image_container">
-        <img src="https://5.imimg.com/data5/SELLER/Default/2020/8/XJ/AV/OJ/57036556/gta-4-pc-game-500x500.jpg"
-          alt="lol" />
-        <span class="title">Title</span>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
-      <span class="price">299 ₹</span>
-      <button class="view_more_btn">view more</button>
-    </div>
-    <div class="game_card">
-      <div class="game_image_container">
-        <img
-          src="https://play-lh.googleusercontent.com/t5oeiArOj1ud5N_FcP_rb4EDW1Jfb9hdduZymL3HPeqihlnEEChx0-vrBctx-NyS1Oo=w526-h296-rw"
-          alt="lol" />
-        <span class="title">Title</span>
-      </div>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
-      <span class="price">299 ₹</span>
-      <button class="view_more_btn">view more</button>
-    </div>
-  </div>
+  <div id="game_list_section"></div>
 
   <!-- Models Section -->
-  <div id="model_container">
+  <div id="model_container" class="hide">
     <!-- Add new game model -->
     <div id="add_new_game_model" class="hide">
       <button type="button" class="action_btn close">❌</button>
       <h2>Add new Game</h2>
-      <form>
+      <form id="add_game_form">
         <fieldset>
           <input type="text" name="title" placeholder="Title" required />
         </fieldset>
@@ -140,7 +84,7 @@
     </div>
 
     <!-- View Game Model -->
-    <div id="view_game_model">
+    <div id="view_game_model" class="hide">
       <button type="button" class="action_btn close">❌</button>
 
       <div id="image_container">
@@ -167,7 +111,7 @@
     </div>
   </div>
 
-  <script src="main.js" />
+  <script src="main.js" type="module" />
 </body>
 
 </html>
