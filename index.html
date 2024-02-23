@@ -30,7 +30,7 @@
       </label>
     </div>
     <div>
-      <label>max (₹.) : <input type="range" /></label>
+      <label>max (₹) : <input type="range" /></label>
       <label>Genre
         <select name="genre">
           <option value="Action">Action</option>
@@ -48,7 +48,7 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
       <span class="price">299 ₹</span>
-      <button>view more</button>
+      <button class="view_more_btn">view more</button>
     </div>
     <div class="game_card">
       <div class="game_image_container">
@@ -58,7 +58,7 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
       <span class="price">299 ₹</span>
-      <button>view more</button>
+      <button class="view_more_btn">view more</button>
     </div>
     <div class="game_card">
       <div class="game_image_container">
@@ -70,7 +70,7 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
       <span class="price">299 ₹</span>
-      <button>view more</button>
+      <button class="view_more_btn">view more</button>
     </div>
     <div class="game_card">
       <div class="game_image_container">
@@ -81,7 +81,7 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
       <span class="price">299 ₹</span>
-      <button>view more</button>
+      <button class="view_more_btn">view more</button>
     </div>
     <div class="game_card">
       <div class="game_image_container">
@@ -93,14 +93,12 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, repellat.</p>
       <span class="price">299 ₹</span>
-      <button>view more</button>
+      <button class="view_more_btn">view more</button>
     </div>
   </div>
 
   <!-- Models Section -->
-
-
-  <div id="model_container" class="hide">
+  <div id="model_container">
     <!-- Add new game model -->
     <div id="add_new_game_model" class="hide">
       <button type="button" class="action_btn close">❌</button>
@@ -142,7 +140,31 @@
     </div>
 
     <!-- View Game Model -->
-    <div id="view_game_model" class="hide"></div>
+    <div id="view_game_model">
+      <button type="button" class="action_btn close">❌</button>
+
+      <div id="image_container">
+        <img src="https://c4.wallpaperflare.com/wallpaper/296/962/469/anna-nina-wallpaper-thumb.jpg" alt="" />
+      </div>
+      <div id="details_container">
+        <div id="personal_details_section">
+          <div>
+            <h2>Lorem.</h2>
+            <p>By: Lorem, ipsum.</p>
+          </div>
+          <div>
+            <h3>120 ₹</h3>
+            <p>4.5 ⭐</p>
+          </div>
+        </div>
+        <div>
+          <p>Released On: 12/12/2023</p>
+          <p>Genre</p>
+          <p>Platform</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sapiente id esse.</p>
+      </div>
+    </div>
   </div>
 
   <script src="main.js" />

@@ -55,10 +55,14 @@ const open_add_game_model_btn = document.getElementById(
 const model_container = document.getElementById("model_container");
 const add_new_game_model = document.getElementById("add_new_game_model");
 const view_game_model = document.getElementById("view_game_model");
+const view_more_btns = document.querySelectorAll(".view_more_btn");
+
+console.log(view_more_btns);
 
 const close_add_new_model = document.querySelector(
   "#add_new_game_model .close"
 );
+const close_view_more_model = document.querySelector("#view_game_model .close");
 
 model_container.classList.add("hide");
 add_new_game_model.classList.add("hide");
@@ -72,4 +76,16 @@ open_add_game_model_btn.addEventListener("click", () => {
 close_add_new_model.addEventListener("click", () => {
   model_container.classList.add("hide");
   add_new_game_model.classList.add("hide");
+});
+
+close_view_more_model.addEventListener("click", () => {
+  model_container.classList.add("hide");
+  view_game_model.classList.add("hide");
+});
+
+view_more_btns.forEach((element) => {
+  element.addEventListener("click", () => {
+    model_container.classList.remove("hide");
+    view_game_model.classList.remove("hide");
+  });
 });
