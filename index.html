@@ -21,20 +21,23 @@
   <div id="filter_section">
     <div id="platform_container">
       <label>Platform
-        <select name="platform">
+        <select name="platform" id="platform_selector">
+          <option value="">Choose Platform</option>
           <option value="PC">PC</option>
           <option value="PS4">PS4</option>
           <option value="Xbox One">Xbox One</option>
-          <option value="Nintendo Switch" selected>Nintendo Switch</option>
+          <option value="Nintendo Switch">Nintendo Switch</option>
         </select>
       </label>
     </div>
     <div>
-      <label>max (₹) : <input type="range" /></label>
+      <label>max (₹) : <input type="range" name="max_price" min="0" max="1000" value="1000"
+          id="max_price_selector" /></label>
       <label>Genre
-        <select name="genre">
+        <select name="genre" id="genre_selector">
+          <option value="">Choose Genre</option>
           <option value="Action">Action</option>
-          <option value="Adventure" selected>Adventure</option>
+          <option value="Adventure">Adventure</option>
         </select>
       </label>
     </div>
@@ -49,7 +52,7 @@
       <h2>Add new Game</h2>
       <form id="add_game_form">
         <fieldset>
-          <input type="text" name="title" placeholder="Title" required />
+          <input type="text" name="title" placeholder="Title" />
         </fieldset>
         <fieldset>
           <input type="text" name="developer" placeholder="Developer" />
@@ -110,6 +113,8 @@
       </div>
     </div>
   </div>
+
+  <div id="notification_box"></div>
 
   <script src="main.js" type="module" />
 </body>
