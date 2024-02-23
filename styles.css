@@ -20,7 +20,9 @@ body {
 #filter_section,
 #filter_section label,
 #filter_section>div,
-#game_list_section {
+#game_list_section,
+#model_container,
+#add_new_game_model>form fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,15 +35,6 @@ body {
 .game_card>button:hover,
 .game_image_container img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#add_new_game_model,
-#view_game_model {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Add New Game section */
@@ -110,6 +103,7 @@ body {
     height: 300px;
     width: 100%;
     border-radius: 8px;
+    position: relative;
 }
 
 .game_image_container img {
@@ -119,7 +113,7 @@ body {
     border-radius: 8px;
 }
 
-.game_card>.title,
+.game_card>.game_image_container>.title,
 .game_card>.price,
 .game_card>button {
     position: absolute;
@@ -127,10 +121,11 @@ body {
     padding: 0 4px;
 }
 
-.game_card>.title {
+.game_card>.game_image_container>.title {
     font-size: 18px;
     font-weight: 700;
-    top: -16px;
+    bottom: 0;
+    left: 0;
 }
 
 .game_card>.price {
@@ -149,4 +144,81 @@ body {
 .game_card>button {
     right: 4px;
     text-transform: capitalize;
+}
+
+/* model styles */
+
+#model_container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+#model_container>div {
+    background-color: pink;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Add new Game model */
+
+#add_new_game_model {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+#add_new_game_model .action_btn {
+    position: absolute;
+    padding: 8px;
+}
+
+#add_new_game_model .close {
+    top: -18px;
+    left: -18px;
+    border-radius: 50%;
+}
+
+#add_new_game_model .add {
+    bottom: -18px;
+    right: -18px;
+    border-radius: 8px;
+}
+
+#add_new_game_model>form {
+    padding: 8px 0;
+}
+
+#add_new_game_model>form fieldset {
+    width: 100%;
+    border: none;
+    margin-bottom: 4px;
+}
+
+#add_new_game_model>form fieldset input,
+#add_new_game_model>form fieldset select,
+#add_new_game_model>form fieldset label {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 0 8px 0 8px;
+}
+
+#add_new_game_model>form fieldset input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block;
 }

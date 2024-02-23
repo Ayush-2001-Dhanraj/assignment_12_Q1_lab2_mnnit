@@ -48,4 +48,28 @@ const video_games = [
   },
 ];
 
-window.onload = () => {};
+const open_add_game_model_btn = document.getElementById(
+  "open_add_game_model_btn"
+);
+
+const model_container = document.getElementById("model_container");
+const add_new_game_model = document.getElementById("add_new_game_model");
+const view_game_model = document.getElementById("view_game_model");
+
+const close_add_new_model = document.querySelector(
+  "#add_new_game_model .close"
+);
+
+model_container.classList.add("hide");
+add_new_game_model.classList.add("hide");
+view_game_model.classList.add("hide");
+
+open_add_game_model_btn.addEventListener("click", () => {
+  model_container.classList.remove("hide");
+  add_new_game_model.classList.remove("hide");
+});
+
+close_add_new_model.addEventListener("click", () => {
+  model_container.classList.add("hide");
+  add_new_game_model.classList.add("hide");
+});
